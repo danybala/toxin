@@ -4,8 +4,11 @@
   display: flex
   justify-content: space-between
   align-items: center
+
   .navigation-bar
     display: flex
+    align-items: center
+
     ul
       list-style: none
       display: flex
@@ -14,22 +17,37 @@
       font-weight: 400
       align-items: center
       gap: 2rem
+
       a
         text-decoration: none
-        color: black
+        color: #1F2041
         padding: 2rem 0
+        display: flex
+        align-items: center
+        cursor: pointer
+        opacity: 0.5
+
     .buttons
+      display: flex
+      vertical-align: center
+      height: 100%
+
       button
+        display: inline-flex
+        align-items: center
         margin-left: 2rem
         padding: 1rem 2rem
         font-size: 1.2rem
         font-weight: bold
-        line-height: 1.5rem
         text-transform: uppercase
         border-radius: 22px
+        line-height: 1.6rem
+
         &.register
           background: linear-gradient(180deg, #BC9CFF, #8BA4F9)
           color: white
           border: 1px black solid
+
         &.login
-          border: 2px pink solid
+          color: #BC9CFF
+          border: 2px #BC9CFF solid
