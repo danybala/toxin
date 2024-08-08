@@ -1,11 +1,12 @@
-const PugPlugin = require("PugPlugin");
+const path = require("path");
+const PugPlugin = require("pug-plugin");
 
 module.exports = {
 	plugins: [
 		new PugPlugin({
 			entry: {
 				// define many page templates here
-				index: "src/pages/index.pug", // => dist/index.html
+				index: "src/templates/pages/index.pug", // => dist/index.html
 			},
 			js: {
 				// JS output filename
@@ -32,4 +33,9 @@ module.exports = {
 			},
 		],
 	},
+    devServer: {
+        static: path.resolve(__dirname, 'dist'),
+        port: 8080,
+        hot: true
+    }
 };
