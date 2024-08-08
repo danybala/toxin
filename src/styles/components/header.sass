@@ -1,7 +1,7 @@
 .header
+  padding: 0 14rem
   height: 7rem
   display: flex
-  flex-flow: row nowrap
   justify-content: space-between
   align-items: center
   .navigation-bar
@@ -9,13 +9,27 @@
     ul
       list-style: none
       display: flex
-      margin: 0 2rem
-      padding: 0
       line-height: 1.8rem
       font-size: 1.4rem
-      flex-flow: row nowrap
-      gap: 2rem
+      font-weight: 400
       align-items: center
+      gap: 2rem
       a
         text-decoration: none
         color: black
+        padding: 2rem 0
+    .buttons
+      button
+        margin-left: 2rem
+        padding: 1rem 2rem
+        font-size: 1.2rem
+        font-weight: bold
+        line-height: 1.5rem
+        text-transform: uppercase
+        border-radius: 22px
+        &.register
+          background: linear-gradient(180deg, #BC9CFF, #8BA4F9)
+          color: white
+          border: 1px black solid
+        &.login
+          border: 2px pink solid
