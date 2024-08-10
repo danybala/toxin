@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="../../styles/main.sass")
+
+    body
+
+    include ../components/header.pug
+
+    main.container.suggestions
+        form.search-form
+            .search-form__group
+                h3.search-form__label Даты пребывания в отеле
+                input(type="date" id="dates")
+            .search-form__group
+                h3.search-form__label Гости
+                input(type="number" id="number_of_guests")
+            .search-form__group
+                h3.search-form__label Диапазон цены
+                input(type="range" id="prices")
+            .search-form__group
+                h3.search-form__label Правила дома
+                .rules
+                    .rules__item
+                        input.rules__checkbox(type="checkbox" id="smoking")
+                        label.rules__label(for="smoking") Можно курить
+                    .rules__item
+                        input.rules__checkbox(type="checkbox" id="pets" checked)
+                        label.rules__label(for="pets") Можно с питомцами
+                    .rules__item
+                        input.rules__checkbox(type="checkbox" id="guests" checked)
+                        label.rules__label(for="guests") Можно пригласить гостей (до 10 человек)
+
+            .search-form__group 
+                h3.search-form__label Доступность
+                input(type="checkbox" id="accessibility") 
+                input(type="checkbox" id="accessibility") 
+            .search-form__group 
+                h3.search-form__label Удобства номера
+                input(type="number" id="rooms")
+        section.hotel-results
+            h1.hotel-results__heading Номера, которые мы для вас подобрали
+            .hotel-results__grid
+                .hotel-card
+                    img.hotel-card__image-content(src="../../assets/images/hotel/image-888-1.png" alt="Image 888")
+                    .hotel-card__details
+                        .hotel-card__number № 888
+                        .hotel-card__type Люкс
+                        .hotel-card__price 9 990Р в сутки
+                    .hotel-card__rating
+                        img.hotel-card_rating-stars(src="" alt="")
+                        .hotel-card__reviews 145 Отзывов
+
+    include ../components/footer.pug

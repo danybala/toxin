@@ -8,6 +8,7 @@ module.exports = {
             entry: {
                 // define many page templates here
                 index: "src/templates/pages/index.pug", // => dist/index.html
+                suggestions: "src/templates/pages/suggestions.pug"
             },
             js: {
                 // JS output filename

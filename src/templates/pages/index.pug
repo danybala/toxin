@@ -24,6 +24,7 @@ html(lang="ru")
                         .container__widget_form_group-2
                             label(for="number-of-guests") Гости
                             input(type="number" id="number-of-guests" placeholder="Сколько гостей" class="arrow_down")
-                    button.buttons(type="submit") Подобрать номер
+                    button.buttons(type="button" onclick="window.open('suggestions.html', '_blank')" ) Подобрать номер
+
     include ../components/footer.pug
     script(src="../../js/index.js" defer="defer")
