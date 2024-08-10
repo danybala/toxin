@@ -8,14 +8,16 @@
 
   .group
     max-width: 26rem
-    vertical-align: center
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
 
     .logo_image
       display: flex
       padding-bottom: 2rem
 
     .comment
-      opacity: 0.75
+      color: $dark-shade-75
 
     div
       font-size: 14px
@@ -25,7 +27,7 @@
     h2
       text-align: left
       font-size: 12px
-      margin-bottom: 2rem
+      margin-bottom: 3rem
 
     ul
       list-style: none
@@ -38,12 +40,18 @@
 
         a
           text-decoration: none
-          color: #1F2041
-          opacity: 0.5
+          color: $dark-shade-50
 
     .sub_text
       margin-bottom: 2rem
-      opacity: 0.75
+      color: $dark-shade-75
+    input
+      width: 100%
+      height: 4.4rem
+      border: 1px solid rgba(31, 32, 65, 0.25)
+      color: $dark-shade-25
+      line-height: 1.8rem
+      text-transform: uppercase
 
 .copyright_bar
   display: flex
@@ -53,7 +61,7 @@
   height: 7rem
 
   div
-    opacity: 0.75
+    color: $dark-shade-75
 
   .social_media_buttons
     margin-left: 2rem

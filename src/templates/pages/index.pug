@@ -8,21 +8,22 @@ html(lang="ru")
     body
     include ../components/header.pug
 
-    div.container
-        div.container__widget
-            div.container__widget-heading Найдем номера под ваши пожелания
-            form.container__widget-form
-                .container__widget_form-group
-                    .container__widget_form-group1
-                        label(for="arrival") Дата прибытия
-                        input(type="date" id="arrival")
-                    .container__widget_form-group2
-                        label(for="departure") Дата отправления
-                        input(type="date" id="departure")
-                .container__widget_form-group
-                    .container__widget_form-group3
-                        label(for="number-of-guests") Гости
-                        input(type="number" id="number-of-guests" placeholder="Сколько гостей")
-
+    main.main.container
+        div.background_image
+            div.container__widget
+                form.container__widget_form
+                    .container__widget-heading Найдем номера под ваши пожелания
+                    .container__widget_form_group
+                        .container__widget_form_group-1
+                            label(for="arrival") Прибытие
+                            input(type="date" id="arrival" class="arrow_down")
+                        .container__widget_form_group-1
+                            label(for="departure") Выезд
+                            input(type="date" id="departure" class="arrow_down")
+                    .container__widget_form_group
+                        .container__widget_form_group-2
+                            label(for="number-of-guests") Гости
+                            input(type="number" id="number-of-guests" placeholder="Сколько гостей" class="arrow_down")
+                    button.buttons(type="submit") Подобрать номер
     include ../components/footer.pug
     script(src="../../js/index.js" defer="defer")
