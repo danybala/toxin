@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Поиск отелей
+        link(rel="stylesheet", href="../../styles/main.sass")
+    body
+    include ../components/header.pug
+
+    main.main.container
+        div.background_image
+            div.container__widget
+                form.container__widget_form
+                    .container__widget-heading Найдем номера под ваши пожелания
+                    .container__widget_form_group
+                        .container__widget_form_group-1
+                            label(for="arrival") Прибытие
+                            input(type="date" id="arrival" class="arrow_down")
+                        .container__widget_form_group-1
+                            label(for="departure") Выезд
+                            input(type="date" id="departure" class="arrow_down")
+                    .container__widget_form_group
+                        .container__widget_form_group-2
+                            label(for="number-of-guests") Гости
+                            input(type="number" id="number-of-guests" placeholder="Сколько гостей" class="arrow_down")
+                    button.buttons(type="button" onclick="window.open('suggestions.html', '_blank')" ) Подобрать номер
+
+    include ../components/footer.pug
+    script(src="../../js/index.js" defer="defer")
