@@ -6,11 +6,12 @@ html(lang="ru")
         title Поиск отелей
         link(rel="stylesheet", href="../../styles/main.sass")
     body
+
     include ../components/header.pug
 
     main.main.container
-        div.background_image
-            div.container__widget
+        .background_image
+            .container__widget
                 form.container__widget_form
                     .container__widget-heading Найдем номера под ваши пожелания
                     .container__widget_form_group
@@ -24,7 +25,11 @@ html(lang="ru")
                         .container__widget_form_group-2
                             label(for="number-of-guests") Гости
                             input(type="number" id="number-of-guests" placeholder="Сколько гостей" class="arrow_down")
-                    button.buttons(type="button" onclick="window.open('suggestions.html', '_blank')" ) Подобрать номер
+                    button.buttons(type="submit" onclick="window.open('suggestions.pug', '_blank')" ) Подобрать номер
+                
+            .down__text Лучшие номера для вашей работы, отдыха и просто вдохновения
 
     include ../components/footer.pug
+    
     script(src="../../js/index.js" defer="defer")
+    
