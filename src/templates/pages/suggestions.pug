@@ -36,8 +36,17 @@ html(lang="en")
 
             .search-form__group 
                 h3.search-form__label Доступность
-                input(type="checkbox" id="accessibility") 
-                input(type="checkbox" id="accessibility") 
+                .rules
+                    .rules__item
+                        input.rules_checkbox(type="checkbox" id="wide-hall")
+                        label.rules__label--bold(for="wide-hall") Широкий коридор
+                        label.add_rules_label(for="wide-hall") Ширина коридоров в номере не менее 91 см.
+
+                    .rules__item
+                        input.rules_checkbox(type="checkbox" id="wide-hall")
+                        label.rules__label--bold(for="invalid_helper") Помощник для инвалидов
+                        label.add_rules_label(for="invalid_helper") На 1 этаже вас встретит специалист и проводит до номера.
+
             .search-form__group 
                 h3.search-form__label Удобства номера
                 input(type="number" id="rooms")
@@ -52,8 +61,9 @@ html(lang="en")
                         .hotel-card__number № 888
                         .hotel-card__type Люкс
                         .hotel-card__price 9 990Р в сутки
-                    .hotel-card__rating
-                        img.hotel-card_rating-stars(src="" alt="")
-                        .hotel-card__reviews 145 Отзывов
+                        .hotel-card__rating
+                            img.hotel-card_rating-stars(src="" alt="")
+                            .hotel-card__reviews 145 Отзывов
+                
 
     include ../components/footer.pug
