@@ -1,0 +1,51 @@
+@import './base/reset.sass';
+
+$dark-shade: rgba(31, 32, 65, 1);
+$dark-shade-75: rgba(31, 32, 65, 0.75);
+$dark-shade-50: rgba(31, 32, 65, 0.5);
+$dark-shade-25: rgba(31, 32, 65, 0.25);
+$dark-shade-5: rgba(31, 32, 65, 0.05);
+
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Regular.eot');
+  src: url('../assets/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('../assets/fonts/Montserrat-Regular.woff') format('woff');
+  src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Montserrat-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Medium.eot');
+  src: url('../assets/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype');
+  src: url('../assets/fonts/Montserrat-Medium.woff') format('woff');
+  src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/Montserrat-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  color: $dark-shade;
+}
+@import 'components/header';
+@import 'components/footer';
+@import 'pages/index.sass';
+@import 'pages/suggestions.sass';
