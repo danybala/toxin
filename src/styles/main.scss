@@ -1,4 +1,4 @@
-@import './base/reset.sass';
+@import '/src/styles/base/reset.scss';
 
 $dark-shade: rgba(31, 32, 65, 1);
 $dark-shade-75: rgba(31, 32, 65, 0.75);
@@ -47,5 +47,5 @@ html {
 }
 @import 'components/header';
 @import 'components/footer';
-@import 'pages/index.sass';
-@import 'pages/suggestions.sass';
+@import 'pages/index.scss';
+@import 'pages/suggestions.scss';
